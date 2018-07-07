@@ -7,12 +7,14 @@ void ATankPlayerController::BeginPlay()
 {
 	Super::BeginPlay();
 
-	UE_LOG(LogTemp,Warning,TEXT("Player Controller of The Tank"));
+	//UE_LOG(LogTemp,Warning,TEXT("Player Controller of The Tank"));
 
 	auto TankPawn = GetControlledTank();
-	if (TankPawn)
+	/*if (TankPawn)
+	{
 		UE_LOG(LogTemp, Warning, TEXT("Got the Tank: %s"), *GetPawn()->GetActorLabel());
-
+	}
+	*/
 }
 
 void ATankPlayerController::Tick(float DeltaTime)

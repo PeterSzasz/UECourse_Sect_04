@@ -7,12 +7,13 @@ void ATankAIController::BeginPlay(){
 	
 	Super::BeginPlay();
 
-	UE_LOG(LogTemp,Warning,TEXT("AI Controller"));
+	//UE_LOG(LogTemp,Warning,TEXT("AI Controller"));
 
 	auto TankPawn = GetControlledTank();
-	if(TankPawn){
+	/*if(TankPawn){
 		UE_LOG(LogTemp,Warning,TEXT("Controlling: %s"),*TankPawn->GetActorLabel())
 	}
+	*/
 }
 
 void ATankAIController::Tick(float DeltaTime)
